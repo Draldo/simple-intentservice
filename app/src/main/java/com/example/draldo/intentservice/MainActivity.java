@@ -1,5 +1,6 @@
 package com.example.draldo.intentservice;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,5 +19,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void triggerStartedService(View view) {
+        Intent intent = new Intent(this, MyStartedService.class);
+        startService(intent);
+    }
+
+    public void triggerIntentService(View view) {
+        Intent intent = new Intent(this, MyIntentService.class);
+        startService(intent);
     }
 }

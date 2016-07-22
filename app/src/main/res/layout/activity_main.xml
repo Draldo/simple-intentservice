@@ -18,5 +18,12 @@
     <Button
         android:onClick="triggerStartedService"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StartService"/>
+
+    <Button
+        android:onClick="triggerIntentService"
+        android:text="IntentService"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
